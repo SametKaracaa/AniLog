@@ -31,3 +31,9 @@ google-services.json
 # Generated / temp
 *.log
 hs_err_pid*
+
+# AI tools
+.claude/
+.cursor/
+.continue/
+.aider*
