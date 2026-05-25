@@ -643,10 +643,10 @@ Akış: `MAListApp` → `AlarmManager` → `ReminderReceiver` → `NotificationH
 
 ##  Geliştiriciler
 
-| İsim | Okul No |
+| İsim |  |
 |------|---------|
-| **Samet KARACA** | 23181616061 |
-| **Deniz ŞENOL** | 23181616023 |
+| **Samet KARACA** |  |
+| **Deniz ŞENOL** | |
 
 Bu proje üniversite **Mobil Uygulama Projesi** dersi kapsamında geliştirilmiştir.
 
