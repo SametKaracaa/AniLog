@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvLibraryTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/library_title"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_title"
+        android:textStyle="bold"
+        android:paddingStart="@dimen/padding_md"
+        android:paddingEnd="@dimen/padding_md"
+        android:paddingTop="@dimen/padding_lg"
+        android:paddingBottom="@dimen/padding_sm"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleMediaType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_sm"
+        app:checkedButton="@id/btnAnime"
+        app:selectionRequired="true"
+        app:singleSelection="true"
+        app:layout_constraintTop_toBottomOf="@id/tvLibraryTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAnime"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/media_anime" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnManga"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/media_manga" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <!-- TabLayout - Watching / Plan to Watch / Completed -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/accent_primary"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="3dp"
+        app:tabSelectedTextColor="@color/accent_primary"
+        app:tabTextColor="@color/text_tertiary"
+        app:tabRippleColor="@color/ripple"
+        app:layout_constraintTop_toBottomOf="@id/toggleMediaType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_watching" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_planned" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_completed" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- Anime List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLibrary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:padding="@dimen/padding_sm"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/item_library_anime" />
+
+    <!-- Empty State -->
+    <LinearLayout
+        android:id="@+id/emptyLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_emoji"
+            android:textSize="56sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_library"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_subtitle"
+            android:textAlignment="center"
+            android:lineSpacingMultiplier="1.4"
+            android:layout_marginTop="@dimen/padding_md" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/bg_surface">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Anime Radar!"
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discover currently airing anime series!\n\n👉 Swipe RIGHT to add an anime to your 'Plan to Watch' list.\n\n👈 Swipe LEFT to skip and see the next one."
+        android:textColor="@color/text_secondary"
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.3"
+        android:layout_marginBottom="24dp" />
+
+    <CheckBox
+        android:id="@+id/cbDoNotShowAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't show again"
+        android:textColor="@color/text_secondary"
+        android:buttonTint="@color/accent_primary" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+# Android / Gradle
+*.iml
+.gradle/
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Keystore files
+*.jks
+*.keystore
+
+# Build outputs / logs
+build_output.txt
+build_output_info.txt
+
+# VS Code
+.vscode/
+
+# Google services (Firebase config - contains API keys)
+google-services.json
+
+# Generated / temp
+*.log
+hs_err_pid*

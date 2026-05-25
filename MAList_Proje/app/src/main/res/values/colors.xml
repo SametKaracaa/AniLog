@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Premium Dark Background -->
+    <color name="bg_primary">#0B0F19</color>
+    <color name="bg_secondary">#151B2B</color>
+    <color name="bg_card">#1A2235</color>
+    <color name="bg_surface">#1F2937</color>
+    <color name="bg_bottom_nav">#0B0F19</color>
+
+    <!-- Accent Colors Ã¢â‚¬â€ Vibrant Purple/Cyan -->
+    <color name="accent_primary">#8B5CF6</color>
+    <color name="accent_secondary">#06B6D4</color>
+    <color name="accent_glow">#4D8B5CF6</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_tertiary">#64748B</color>
+
+    <!-- Status Colors -->
+    <color name="status_watching">#10B981</color>
+    <color name="status_planned">#F59E0B</color>
+    <color name="status_completed">#3B82F6</color>
+
+    <!-- Score Badge -->
+    <color name="score_bg">#990B0F19</color> <!-- Translucent black -->
+    <color name="score_text">#FBBF24</color>
+
+    <!-- Shimmer -->
+    <color name="shimmer_base">#1A2235</color>
+    <color name="shimmer_highlight">#253047</color>
+
+    <!-- Misc -->
+    <color name="divider">#334155</color>
+    <color name="ripple">#338B5CF6</color>
+    <color name="overlay_gradient_start">#000B0F19</color>
+    <color name="overlay_gradient_end">#E60B0F19</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>

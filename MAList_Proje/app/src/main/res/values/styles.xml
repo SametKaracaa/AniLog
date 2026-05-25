@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ayarlar ekranÃ„Â± bÃƒÂ¶lÃƒÂ¼m baÃ…Å¸lÃ„Â±klarÃ„Â± -->
+    <style name="SectionHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/accent_primary</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:paddingStart">@dimen/padding_md</item>
+        <item name="android:paddingEnd">@dimen/padding_md</item>
+        <item name="android:paddingTop">@dimen/padding_lg</item>
+        <item name="android:paddingBottom">@dimen/padding_sm</item>
+    </style>
+
+    <style name="SettingsCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/padding_md</item>
+        <item name="android:layout_marginEnd">@dimen/padding_md</item>
+        <item name="android:layout_marginTop">@dimen/padding_xs</item>
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/bg_card</item>
+    </style>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Grid -->
+    <dimen name="grid_spacing">10dp</dimen>
+    <dimen name="card_radius">16dp</dimen>
+    <dimen name="card_elevation">0dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_xs">4dp</dimen>
+    <dimen name="padding_sm">8dp</dimen>
+    <dimen name="padding_md">16dp</dimen>
+    <dimen name="padding_lg">24dp</dimen>
+    <dimen name="padding_xl">32dp</dimen>
+
+    <!-- Card Sizes -->
+    <dimen name="anime_card_height">260dp</dimen>
+    <dimen name="library_card_height">120dp</dimen>
+    <dimen name="library_image_width">85dp</dimen>
+
+    <!-- Text -->
+    <dimen name="text_title">20sp</dimen>
+    <dimen name="text_subtitle">14sp</dimen>
+    <dimen name="text_body">12sp</dimen>
+    <dimen name="text_caption">10sp</dimen>
+    <dimen name="text_score">11sp</dimen>
+
+    <!-- Bottom Sheet -->
+    <dimen name="bottom_sheet_image_height">220dp</dimen>
+    <dimen name="bottom_sheet_radius">32dp</dimen>
+
+    <!-- Score Badge -->
+    <dimen name="score_badge_padding_h">8dp</dimen>
+    <dimen name="score_badge_padding_v">4dp</dimen>
+    <dimen name="score_badge_radius">12dp</dimen>
+
+    <!-- Bottom Nav -->
+    <dimen name="bottom_nav_height">64dp</dimen>
+
+    <!-- Score Buttons -->
+    <dimen name="stroke_width_1dp">1dp</dimen>
+</resources>
